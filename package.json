@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "landing page for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss index.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillHDev/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WillHDev/Portfolio/issues"
+  },
+  "homepage": "https://github.com/WillHDev/Portfolio#readme",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
+  }
+}
