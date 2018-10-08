@@ -7,17 +7,20 @@
     &:not(:last-child) {
     }
 
+    
     @include clearfix;
 /*all attributes that start with col- */
     [class^="col-"] {
         
-        background-color: 	#FF4500;
+        // background-color: 	#FF4500;
         float: left;
+
 
          &:not(:last-child) {
            margin-right: $gutter-horizontal;
          }
     }
+
 
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal}) / 2 );
