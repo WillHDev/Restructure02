@@ -28,13 +28,22 @@
             color: white;
         }
         &--back {
-           
+            color:white;
+            margin-top: 10rem;
+            font-size: 2rem;
+            background-image: linear-gradient(to right bottom, 
+                $color-tertiary-dark, $color-tertiary-light);
             transform: rotateY(180deg);
 
-            &-1 {
-                background-image: linear-gradient(to right bottom, 
-                $color-tertiary-dark, $color-tertiary-light)
+            &-2 {
+                background-image: url('./images/leather.jpg')
             }
+            // &- {
+            //     background-image: url('/images/leather.jpg')
+            // }
+            // &-1 {
+            //     background-image: url('/images/leather.jpg')
+            // }
         }
     }
 
@@ -81,9 +90,14 @@
         text-align: right;
         color: $color-white;
         position: absolute;
-        top: 12rem;
+        top: 2rem;
         right: 2rem;
-        width:75%
+
+        width:75%;
+
+        &--2{
+            margin-top: 20rem;
+        }
     }
 
     &__heading-span {
@@ -96,6 +110,11 @@
                 rgba($color-tertiary-light, .85),
                 rgba($color-tertiary-dark, .85));
             }
+            &--2 {
+                background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, .85),
+                rgba($color-secondary-dark, .85));
+            }
     }
 
 &__details {
@@ -103,6 +122,8 @@
 
     ul {
          //margin-top: 25rem;
+         margin-left: 2rem;
+         text-align: center;
         list-style: none;
         width: 80%;
         //margin: 0 auto;

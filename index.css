@@ -114,9 +114,13 @@ body {
       background-color: #fff;
       color: white; }
     .card__side--back {
+      color: white;
+      margin-top: 10rem;
+      font-size: 2rem;
+      background-image: linear-gradient(to right bottom, #5643fa, #2998ff);
       transform: rotateY(180deg); }
-      .card__side--back-1 {
-        background-image: linear-gradient(to right bottom, #5643fa, #2998ff); }
+      .card__side--back-2 {
+        background-image: url("./images/leather.jpg"); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -142,16 +146,22 @@ body {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 12rem;
+    top: 2rem;
     right: 2rem;
     width: 75%; }
+    .card__heading--2 {
+      margin-top: 20rem; }
   .card__heading-span {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
   .card__details ul {
+    margin-left: 2rem;
+    text-align: center;
     list-style: none;
     width: 80%;
     margin-bottom: 5rem; }
