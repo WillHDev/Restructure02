@@ -16,15 +16,21 @@
 
 @import "layout/header";
 @import "layout/grid";
+@import "layout/footer";
 
 @import "components/card";
+@import "components/buttonLarge";
 @import "components/button";
+@import "components/aboutInfo";
+@import "components/story";
+@import "components/profile";
+
 
 .heading-primary-main {
     display: block;
     font-size:  80px;
     
-    font-weight: 300;
+    font-weight: 100;
     letter-spacing: 35px;
     /* position: absolute; */
     animation-name: moveInLeft;
@@ -32,14 +38,36 @@
 
 }
 
+// .heading-container {
+//     margin-top: 20rem;
+// }
+
 .heading-secondary {
 
     // margin:auto;
+    font-weight: normal;
     text-align: center;
-    font-size:40px
+    font-size:45px;
+    color: $color-tertiary-light;
+    margin-bottom: 3rem;
 }
 
- 
+.heading-secondary-main {
+
+    // margin:auto;
+    font-weight: normal;
+  
+    font-size:45px;
+    color: $color-tertiary-light;
+
+  
+
+    &-build-something {
+       float: right;
+       margin-right: 4rem;
+        
+    }
+}
 
 .heading-tertiary {
     font-size: 1.6rem;
@@ -112,3 +140,11 @@
 
  
 
+  .section-stories {
+    position: relative;
+    padding: 15rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}

@@ -1,3 +1,5 @@
+
+
 .card {
     //FUNCTIONALITY
     perspective: 150rem;
@@ -6,10 +8,15 @@
     height: 52rem;
 
 
+
     &__side {
         // background-color: orange;
         // font-size: 2rem;
         //  color: white;
+        border-radius: 25px;
+    
+        background-position: left top;
+
 
         height: 62rem;
         transition: all .8s ease;
@@ -19,15 +26,18 @@
         width: 100%;
         //hides back part of element, no reverse text
         backface-visibility: hidden;
-        border-radius: 3px;
+        
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
         &--front {
             background-color: $color-white;
             color: white;
+            margin-top: 10rem;
         }
         &--back {
+          
+            padding: 1rem;
             color:white;
             margin-top: 10rem;
             font-size: 2rem;
@@ -44,6 +54,12 @@
             // &-1 {
             //     background-image: url('/images/leather.jpg')
             // }
+
+            &--box {
+                padding-top: 10rem;
+  
+
+            }
         }
     }
 
@@ -79,8 +95,10 @@
         $color-secondary-dark, $color-secondary-light);
     }
     &--3 {
-        background-image:  linear-gradient(to right bottom, 
-        $color-primary-dark, $color-primary-light);
+        height: 35rem;
+      
+        background-image:  url("./images/PT5.jpg"), linear-gradient(to right bottom, 
+        $color-tertiary-light, $color-primary-light);
     }
 }
     &__heading {
@@ -102,9 +120,14 @@
 
     &__heading-span {
         //position: absolute;
+        border-radius: 25px;
+    
+        background-position: left top;
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
+        opacity: 1;
+        filter: alpha(opacity=100);
             &--1 {
                 background-image: linear-gradient(to right bottom,
                 rgba($color-tertiary-light, .85),
@@ -114,6 +137,12 @@
                 background-image: linear-gradient(to right bottom,
                 rgba($color-secondary-light, .85),
                 rgba($color-secondary-dark, .85));
+            }
+
+            &--3 {
+                background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, .85),
+                rgba($color-tertiary-dark, .85));
             }
     }
 

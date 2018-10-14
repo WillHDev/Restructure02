@@ -29,40 +29,67 @@
     </header>
 
     
-    </section>
+   
     <main class="container">
+            <div class="col-1-of-2 ">
         <section class="section-about">
-                <h2 class="heading-secondary">About</h2>
-        </section>
+                <h2 class="heading-secondary-main heading-secondary-main-build-something">"Let's Build Something Great"</h2>
+       </section>
+    <section class="section-stories">
+    <div class="row">
+            <div class="story story--left">
+                
+                <div class="story__text story__text-left">
+                
+                        <p class="paragraph">
+                                Hi, I'm Will.  I love developing apps in React and learning how to 
+                                create new features.  When I'm not in the lab, you can find me performing improv comedy, teaching, or hiking the 
+                                White Mountains.
+                            </p>
+                   
+                </div>
+            </div>
+
+<div class="profile-picture-container">
+        <div class="profile-picture">
+                &nbsp;
+        </div>
+        </div>
+        <div class="row">
+        </div>
+      <div class="row">
+            <div class="story story--right">
+             
+                <div class="story__text story__text-right">
+                  
+                  
+
+                        <p class="paragraph">
+                                I frequently use React/Redux, Node.js/Express, MongoDB, PostgreSQL, and MeteorJS to build web applications.  I enjoy the challenge of 
+                                learning different technologies, and I'm always looking for new things to add to the stack.
+                        </p>
+                      
+                </div>
+            </div>
+        </div>
+        </div>
+</div>
+</section>     
 <div class="row">
-    <div class="col-1-of-2">
-      
-        <h3 class="heading-tertiary"></h3>
-        <p class="paragraph">
-            Hi, I'm Will.  I love developing apps in React and learning how to 
-            create new features.  When I'm not in the lab, you can find me performing improv comedy, teaching, or hiking the 
-            White Mountains.
-        </p>
-        <h3>
-                <a href="https://www.linkedin.com/in/william-holcombe-699196161/">LinkedIn</a>
-                <a href="https://github.com/WillHDev">Github</a>
-                <a href="WillVHolcombe_Resume.pdf">Resume</a>
-        </h3>
-      
-    </div>
-    <div class="col-1-of-2">
-            <p class="paragraph">
-                    I frequently use React/Redux/GraphQL, Node.js/Express, MongoDB, and PostgreSQL to build web applications.  I've also dabbled with Python and MATLAB. I enjoy the challenge of 
-                    learning different technologies, and I'm always looking for new things to add to the stack.
-            </p>
+    <div class="col-1-of-1">
+            <ul class="main-nav js--main-nav">
+               <li> <a href="https://www.linkedin.com/in/william-holcombe-699196161/">LinkedIn</a>  </li> 
+                <li>  <a href="https://github.com/WillHDev">Github</a> </li> 
+               <li>   <a href="Will.V.Holcombe_Resume.pdf">Resume</a>  </li> 
+                </ul>
+           
+        
     </div>
 </div>
-      
-
     </section>
     <section class="section-projects">
-        <div class="u-center-text u-margin-botton-big">
-            <h2 class="heading-secondary">
+        <div class="u-center-text u-margin-botton-big heading-container">
+            <h2 class="heading-secondary ">
                 Recent Projects
             </h2>
         </div>
@@ -123,10 +150,15 @@
 
 
                     <div class="card__side card__side--back card__side--back-2">
+                        <div class="card__side--back--box">   
                             A full stack language learning app featuring a spaced repetition algorithm 
                             for optimized memorization. Built with React, Redux, Node, Express and Mongo HTML5, CSS3
-    
-                        
+                        </div>
+                        <div class="project-link--1"> 
+                          <a class='btn btn--blue btn--animated' href="https://learndothraki.herokuapp.com">Visit App</a> 
+                          <a href="https://github.com/thinkful-ei22/spaced-repetition-client-brandon-william-rachel"
+                                class='btn btn--blue btn--animated'>Repo</a>
+                        </div>
 
                     </div>
                 </div>
@@ -135,12 +167,25 @@
                 <div class="card">
                     <div class="card__side card__side--front">
                             <div class="card__picture card__picture--3">
-
+                                    &nbsp;
                             </div>
-                                &nbsp;
+                            <h4 class="card__heading card__heading--2">
+                                <span class="card__heading-span card__heading-span--3">
+                                    Melrose PT</span>
+                            </h4>
+                            <div class="card__details">
+                                <ul>
+                                    <li>MeteorJS</li>
+                                <li>Stripe</li>
+                                <li>Oauth</li>
+                                <li>Graphql</li>
+                                <li>Apollo</li>
+                                 </ul>
+                            </div>
+
                         </div>
                     <div class="card__side card__side--back card__side--back-3">
-                            Under Construction <br/> Check back soon <br/>
+                            Under Construction <br/> Check back soon! <br/>
 
                     </div>
                 </div>
@@ -148,6 +193,32 @@
         </div>
     </section>
 </main>
+<footer class="footer">
+        
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Built by <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course <a href="#" class="footer__link">Advanced CSS and Sass</a>.
+                    Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use this webpage for both personal
+                    and commercial use, but NOT to claim it as your own design. A credit to the original author, Jonas
+                    Schmedtmann, is of course highly appreciated!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>
 
