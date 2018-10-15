@@ -1,42 +1,36 @@
 
-// .profile-picture-container {
-//     perspective: 150rem;
-//     -moz-perspective: 150rem;
-//     position: relative;
-
-//     border-radius: 25px;
-    
-//         background-position: left top;
-
-
-//         height: 20rem;
-//         transition: all .8s ease;
-//         position: absolute;
-//         top:0;
-//         left:0;
-//         width: 20%;
-//         //hides back part of element, no reverse text
+.profile-picture-container {
+    width: 20rem;
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
         
-//         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
-// }
+}
 
 .profile-picture {
  
-float:right;
-margin-right: 10rem;
-    width: 300px;
- height: 600px;
- 
+// float:right;
+// margin-right: 10rem;
+//     width: 300px;
+//  height: 600px;
+//  border-radius: 50%;
 
-    background-color: #cccccc;
+//     background-color: #cccccc;
 
-    background-position: center;
-    background-repeat: no-repeat;
+//     background-position: center;
+//     background-repeat: no-repeat;
    
-    position: relative;
-       
-        background-image: url('./images/profile2.jpg');
+//     position: relative;
+
+display: inline;
+margin: 0 auto;
+margin-right: -25%; //centers the image
+height: 100%;
+width: auto;
+       // background-image: url('./images/Profile8.jpg');
       
   
        

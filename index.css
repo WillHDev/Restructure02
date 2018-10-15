@@ -414,16 +414,19 @@ body {
     transform: translateX(-4rem) scale(1);
     filter: blur(3px) brightness(80%); }
 
-.profile-picture {
-  float: right;
-  margin-right: 10rem;
-  width: 300px;
-  height: 600px;
-  background-color: #cccccc;
-  background-position: center;
-  background-repeat: no-repeat;
+.profile-picture-container {
+  width: 20rem;
+  height: 20rem;
   position: relative;
-  background-image: url("./images/profile2.jpg"); }
+  overflow: hidden;
+  border-radius: 50%; }
+
+.profile-picture {
+  display: inline;
+  margin: 0 auto;
+  margin-right: -25%;
+  height: 100%;
+  width: auto; }
 
 .heading-primary-main {
   display: block;
