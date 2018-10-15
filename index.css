@@ -74,6 +74,9 @@ body {
   margin: 0 auto;
   margin-bottom: 8rem;
   /*all attributes that start with col- */ }
+  .row .row-about:first-child {
+    margin-bottom: 1rem;
+    margin-top: 4rem; }
   .row::after {
     content: "";
     display: table;
@@ -352,7 +355,7 @@ body {
   font-size: 1.6rem;
   transform: skewX(-12deg); }
   .story--right {
-    margin-right: 15rem;
+    margin-right: 30rem;
     float: right; }
   .story--left {
     margin-left: 4rem;
@@ -417,7 +420,9 @@ body {
 .profile-picture-container {
   width: 20rem;
   height: 20rem;
-  position: relative;
+  position: absolute;
+  float: right;
+  margin-right: 5rem;
   overflow: hidden;
   border-radius: 50%; }
 

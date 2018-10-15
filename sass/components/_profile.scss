@@ -2,7 +2,9 @@
 .profile-picture-container {
     width: 20rem;
     height: 20rem;
-    position: relative;
+    position: absolute;
+    float: right;
+    margin-right: 5rem;
     overflow: hidden;
     border-radius: 50%;
         
