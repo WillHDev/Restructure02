@@ -478,8 +478,7 @@ body {
     float: right; }
   .story--left {
     margin-left: 40rem;
-    float: left;
-    position: absolute; }
+    float: left; }
   @media only screen and (max-width: 56.25em) {
     .story {
       width: 100%;
@@ -559,6 +558,7 @@ body {
   width: auto; }
 
 .row-build-something {
+  padding: 1rem;
   background-color: white;
   width: 100%;
   border-top: 5px solid black;
@@ -568,7 +568,7 @@ body {
   background-color: white;
   margin: 0 auto;
   font-weight: normal;
-  font-size: 3rem;
+  font-size: 4rem;
   color: #2998ff; }
   .heading-secondary-main-build-something {
     float: right; }
@@ -576,3 +576,6 @@ body {
       .heading-secondary-main-build-something {
         letter-spacing: 1rem;
         font-size: 1rem; } }
+
+.row-nav {
+  margin-top: -8rem; }

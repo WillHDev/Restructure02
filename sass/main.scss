@@ -44,6 +44,7 @@
 .row-build-something {
 // opacity: 0;
 //text-align: center;
+padding: 1rem;
 background-color: white;
 width: 100%;
 border-top: 5px solid black;
@@ -56,7 +57,7 @@ background-color: white;
    margin: 0 auto;
     font-weight: normal;
   
-    font-size:3rem;
+    font-size:4rem;
     color: $color-tertiary-light;
 
   
@@ -72,4 +73,8 @@ background-color: white;
         font-size: 1rem;
         }
     }
+}
+
+.row-nav{
+    margin-top: -8rem;
 }
