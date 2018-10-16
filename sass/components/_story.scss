@@ -1,5 +1,6 @@
 .story {
-    width: 45%;
+    width: 65%;
+  
     color: white;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, .1);
@@ -13,27 +14,35 @@
 
 
     &--right {
-        margin-top: 10rem;
-        margin-right: 30rem;
+        margin-top: 3rem;
+        //margin-left: 25rem;
             float: right;
-            
+      
+            // @include respond(phone) {
+            //     margin-bottom: 20rem;
+            // }  
     }
 
     &--left {
  
-        margin-left: 40rem;
-            float: left;
+        //margin-left: 25rem;
+            float:right;
             //position: absolute;
+            @include respond(phone) {
+                margin-top: 20rem;
+            }  
     }
 
     @include respond(tab-port) {
-        width: 100%;
+        width: 65%;
         padding: 4rem;
         padding-left: 7rem;
     }
 
     @include respond(phone) {
         transform: skewX(0);
+        box-sizing: inline-block;
+        margin-top: 5rem;
     }
 
     &__shape {

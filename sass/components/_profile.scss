@@ -3,12 +3,13 @@
     width: 30rem;
     height: 30rem;
     position: absolute;
-    float: right;
+    //float: right;
     margin-right: 5rem;
-    margin-top: 8rem;
+    margin-top: 12rem;
     overflow: hidden;
-
+z-index: 2;
    
+
         border: 12px solid  $color-tertiary-dark;
         border-image-source: -webkit-linear-gradient(to right bottom, 
         $color-tertiary-dark, $color-tertiary-light);
@@ -17,6 +18,13 @@
         // border-radius: 100%;
         display: inline-block;
         //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        @include respond(phone) { // width < 1200?
+            float: none;
+            // margin: 0; //1 rem = 9px, 9/16 = 50%
+             margin-top: 10rem;
+        }
+    
+
 
 }
 
