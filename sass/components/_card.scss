@@ -1,4 +1,8 @@
-
+// .col-1-of-3-card {
+//     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+//     @include respond(tab-land) {
+//         width:100%;
+// }
 
 .card {
     //FUNCTIONALITY
@@ -261,11 +265,12 @@
 @include respond(tab-land) { // width < 1200?
 
   //FUNCTIONALITY
-//display: inline-block;
+  width: 100%;
+//display: block;
   height: auto;
   margin:0;
   padding:0;
-
+box-sizing: inherit;
   &__side {
       // background-color: orange;
       // font-size: 2rem;

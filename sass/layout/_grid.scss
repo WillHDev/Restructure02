@@ -7,14 +7,6 @@
     margin-bottom: $gutter-vertical;
     // &:not(:last-child) {
     // }
-.row-about:first-child {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}
-.row-about:last-child {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-}  
 
 
     @include clearfix;
@@ -27,8 +19,26 @@
 
          &:not(:last-child) {
            margin-right: $gutter-horizontal;
+
+           @include respond(tab-port) {
+           margin-right: 0;
+        }
+         }
+
+         @include respond(tab-port) {
+             width: 100% !important;
          }
     }
+
+    // .col-1-of-3-card {
+    //     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+    //     @include respond(tab-land) {
+    //         width: 100%;
+    //     }
+    // }
+
+
+
     .col-1-of-1 {
         width: 100%;
     }
