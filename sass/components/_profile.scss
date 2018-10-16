@@ -1,13 +1,21 @@
 
 .profile-picture-container {
-    width: 20rem;
-    height: 20rem;
+    width: 30rem;
+    height: 30rem;
     position: absolute;
     float: right;
     margin-right: 5rem;
+    margin-top: 8rem;
     overflow: hidden;
-    border-radius: 50%;
-        
+
+   
+        border: 12px solid  $color-tertiary-dark;
+        border-image-source: -webkit-linear-gradient(to right bottom, 
+        $color-tertiary-dark, $color-tertiary-light);
+        border-image-slice: 1;
+        border-radius: 50%;
+        // border-radius: 100%;
+        display: inline-block;
         //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 }
@@ -29,7 +37,7 @@
 
 display: inline;
 margin: 0 auto;
-margin-right: -25%; //centers the image
+margin-left: -10%; //centers the image
 height: 100%;
 width: auto;
        // background-image: url('./images/Profile8.jpg');

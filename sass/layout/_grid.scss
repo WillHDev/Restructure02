@@ -3,14 +3,20 @@
     background-color: #eee;
     /* center block elements nice! */
     margin: 0 auto;
+    // margin-top: 0rem;
     margin-bottom: $gutter-vertical;
     &:not(:last-child) {
     }
 .row-about:first-child {
     margin-bottom: 1rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
-    
+.row-about:last-child {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}  
+
+
     @include clearfix;
 /*all attributes that start with col- */
     [class^="col-"] {

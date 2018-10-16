@@ -13,13 +13,17 @@
 
 
     &--right {
+        margin-top: 10rem;
         margin-right: 30rem;
             float: right;
+            
     }
 
     &--left {
-        margin-left: 4rem;
+ 
+        margin-left: 40rem;
             float: left;
+            position: absolute;
     }
 
     @include respond(tab-port) {
