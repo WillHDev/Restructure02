@@ -262,20 +262,20 @@
 
 
 
-@include respond(tab-land) { // width < 1200?
+@include respond(tab-port) { // width < 1200?
 
   //FUNCTIONALITY
-  width: 100%;
+  //width: 100%;
 //display: block;
   height: auto;
-  margin:0;
-  padding:0;
-box-sizing: inherit;
+  //margin:0;
+ // padding:0;
+//box-sizing: inherit;
   &__side {
       // background-color: orange;
       // font-size: 2rem;
       //  color: white;
-      border-radius: 25px;
+      border-radius: 3px;
   
       //background-position: left top;
     //   overflow:hidden;
@@ -289,7 +289,7 @@ box-sizing: inherit;
     //   //hides back part of element, no reverse text
     //   backface-visibility: hidden;
       
-      box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+     // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
     //   &--front {

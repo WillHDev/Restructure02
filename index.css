@@ -69,16 +69,15 @@ body {
         font-size: 1rem; } }
 
 .heading-secondary {
-  padding-top: 3rem;
+  padding: 3rem;
   font-weight: normal;
   text-align: center;
-  font-size: 45px;
+  font-size: 4.5rem;
   color: #2998ff;
-  margin-bottom: 3rem; }
+  margin: 0; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary {
-      letter-spacing: 1rem;
-      font-size: 1rem; } }
+      font-size: 3rem; } }
 
 .heading-tertiary {
   font-size: 1.6rem;
@@ -159,6 +158,10 @@ body {
   margin: 0 auto;
   margin-bottom: 8rem;
   /*all attributes that start with col- */ }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 0 3rem; } }
   .row::after {
     content: "";
     display: table;
@@ -367,18 +370,13 @@ body {
       color: #2e226d; }
       .card__details ul li:not(:last-child) {
         border-bottom: 1px solid #eee; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .card {
-      width: 100%;
-      height: auto;
-      margin: 0;
-      padding: 0;
-      box-sizing: inherit; }
+      height: auto; }
       .card__side {
-        border-radius: 25px;
+        border-radius: 3px;
         height: auto;
-        position: relative;
-        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+        position: relative; }
         .card__side--back {
           padding: 1rem;
           color: white;

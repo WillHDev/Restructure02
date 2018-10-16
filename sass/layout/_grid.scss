@@ -7,7 +7,10 @@
     margin-bottom: $gutter-vertical;
     // &:not(:last-child) {
     // }
-
+    @include respond(tab-port) {
+       max-width: 50rem;
+       padding: 0 3rem;
+     }
 
     @include clearfix;
 /*all attributes that start with col- */

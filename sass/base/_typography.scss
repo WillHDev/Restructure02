@@ -48,17 +48,18 @@ body {
 
     .heading-secondary {
 
-        padding-top: 3rem;
+        padding: 3rem;
          font-weight: normal;
          text-align: center;
-         font-size:45px;
+         font-size:4.5rem;
          color: $color-tertiary-light;
-         margin-bottom: 3rem;
+         margin: 0;
+         //margin-bottom: 3rem;
 
 
          @include respond(phone) {
-            letter-spacing: 1rem;
-            font-size: 1rem;
+            //letter-spacing: 2rem;
+            font-size: 3rem;
             }
 
      }
