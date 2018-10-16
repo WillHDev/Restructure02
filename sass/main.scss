@@ -26,122 +26,50 @@
 @import "components/profile";
 
 
-.heading-primary-main {
-    display: block;
-    font-size:  80px;
+// .heading-primary-main {
+//     display: block;
+//     font-size:  80px;
     
-    font-weight: 100;
-    letter-spacing: 35px;
-    /* position: absolute; */
-    animation-name: moveInLeft;
-    animation-duration: 3s;
-
-}
+//     font-weight: 100;
+//     letter-spacing: 35px;
+//     /* position: absolute; */
+//     animation-name: moveInLeft;
+//     animation-duration: 3s;
 
 
-.heading-secondary {
 
-   padding-top: 3rem;
-    font-weight: normal;
-    text-align: center;
-    font-size:45px;
-    color: $color-tertiary-light;
-    margin-bottom: 3rem;
+// }
+
+
+.row-build-something {
+// opacity: 0;
+//text-align: center;
+background-color: white;
+width: 100%;
+border-top: 5px solid black;
+height: 5rem;
 }
 
 .heading-secondary-main {
-
-   
+//text-align: center;
+background-color: white;
+   margin: 0 auto;
     font-weight: normal;
   
-    font-size:45px;
+    font-size:3rem;
     color: $color-tertiary-light;
 
   
 
     &-build-something {
        float: right;
-       margin-right: 4rem;
+       //margin-right: 4rem;
         
-    }
-}
-
-.heading-tertiary {
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-transform: uppercase;
-  
-}
-.paragraph {
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-    /* &:not(:last-child) {
-
-    } */
-    // &-two {
-    //     float: right;
-        
-    // }
-}
 
 
-.section-about {
-
-    background-color:  #f7f7f7; /* color-grey-light-1 */
-    padding: 5rem 0;
-    /*compensates for wedge  */
-    margin-top: -20vh;
-    
-    
-}
-// .section-projects {
-//     background-color:  #f7f7f7; /* color-grey-light-1 */
-//     padding: 35rem 0;
-//     /*compensates for wedge  */
-//     margin-top: -20vh;
-    
-// }
-
-.heading-about {
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, #7ed56fc9,
-    #28b485 )
-}
-/* .logo-box {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-} */
-/*linear-gradient(to right #0000FF, #00FFFF),*/
-
-/* .header {
-    height: 95vh;
-    display: block;
-    position: relative;
-  }
-  
-  header::after {
-    content: "";
-    background: linear-gradient(to right #0000FF, #00FFFF), url('images/network-nodes2.jpg');
-    background-size: cover;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-  } */
-
- 
-
-  .section-stories {
-    position: relative;
-    padding: 15rem 0;
-
-    @include respond(tab-port) {
-        padding: 10rem 0;
+       @include respond(phone) {
+        letter-spacing: 1rem;
+        font-size: 1rem;
+        }
     }
 }
