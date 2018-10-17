@@ -1,3 +1,16 @@
+.col-shadow {
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
+}
+
+.row-projects {
+    height: 90rem;
+}
+
+.row-profile-stories {
+    z-index: -1;
+
+}
+
 .row {
     max-width: $grid-width;
     background-color: #eee;
@@ -69,8 +82,10 @@
 //.row:not() //
 //
 .row-type-two {
+    //border-top: 6rem solid #fff ;
+    background-clip: content-box;
     max-width: $grid-width;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.2) ;
     /* center block elements nice! */
     margin: 0 auto;
     // margin-top: 0rem;

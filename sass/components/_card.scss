@@ -21,7 +21,7 @@
         background-position: left top;
         overflow:hidden;
         -webkit-backface-visibility: hidden;
-        height: 62rem;
+        height: 67rem;
         transition: all .8s ease;
         position: absolute;
         top:0;
@@ -100,7 +100,7 @@
         $color-secondary-dark, $color-secondary-light);
     }
     &--3 {
-        height: 35rem;
+        //height: 35rem;
       
         background-image:  url("./images/PT5.jpg"), linear-gradient(to right bottom, 
         $color-tertiary-light, $color-tertiary-dark);
@@ -153,10 +153,18 @@
 
 &__details {
     //padding: 3rem;
-
+&-container {
+    padding: 2rem;
+}
     ul {
          //margin-top: 25rem;
-         margin-left: 2rem;
+         //margin-left: 2rem;
+         margin: auto;
+         position: absolute;
+         bottom:0;
+         margin-left: 3rem;
+         padding: 0;
+         //padding-bottom: 
          text-align: center;
         list-style: none;
         width: 80%;
@@ -165,8 +173,8 @@
         li {
         //    display: inline;
             text-align: center;
-            font-size: 1rem;
-            padding: 0.5rem;
+            font-size: 1.5rem;
+            padding: 1rem;
             color: rgb(46, 34, 109);
 
             &:not(:last-child) {
@@ -301,7 +309,7 @@
         
           padding: 1rem;
           color:white;
-          margin-top: 10rem;
+          margin-top: 0rem;
           font-size: 2rem;
           background-image: linear-gradient(to right bottom, 
               $color-tertiary-dark, $color-tertiary-light);

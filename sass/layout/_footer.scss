@@ -2,7 +2,7 @@
     background-color: $color-grey-dark-3;
     padding: 10rem 0;
     font-size: 1.4rem;
-    color: $color-grey-light-1;
+    color: $color-grey-dark;
 
     @include respond(tab-port) {
         padding: 8rem 0;
@@ -46,6 +46,9 @@
     }
 
     &__link {
+        margin-left:2rem;
+        margin-bottom:2rem;
+        
         &:link,
         &:visited {
             color: $color-grey-light-1;
@@ -54,6 +57,7 @@
             text-transform: uppercase;
             display: inline-block;
             transition: all .2s;
+
         }
 
         &:hover,

@@ -3,6 +3,10 @@
     background-color: $color-grey-light-1;
     
     padding: 0 0 10rem 0;
+    @include respond(tab-lsnd) {
+        background-color: #eee;
+     }
+
 }
 
 // .section-projects-border {
