@@ -66,7 +66,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 1rem;
-        font-size: 1rem; } }
+        font-size: 1.5rem; } }
 
 .heading-secondary {
   padding: 3rem;
@@ -391,6 +391,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .card {
       height: auto; }
+      .card__details-container {
+        height: 25rem;
+        padding: 0rem; }
       .card__side {
         border-radius: 3px;
         height: auto;
@@ -529,6 +532,10 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
     margin-top: 5rem;
     float: left; }
+    @media only screen and (max-width: 56.25em) {
+      .story--right {
+        margin-bottom: -1rem;
+        margin-left: -1rem; } }
   .story--left {
     margin-top: -5rem;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -536,12 +543,16 @@ body {
     float: right; }
     @media only screen and (max-width: 56.25em) {
       .story--left {
-        margin-top: 20rem; } }
+        margin-top: 20rem;
+        margin-right: -1rem;
+        margin-top: 1rem; } }
   @media only screen and (max-width: 56.25em) {
     .story {
       transform: skewX(0);
       box-sizing: inline-block;
-      margin-top: 5rem; } }
+      margin-top: 5rem;
+      width: 85%;
+      float: none; } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -569,7 +580,7 @@ body {
     transform: skewX(12deg); }
     .story__text-right {
       margin-right: 3rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
       .story__text {
         transform: skewX(0); } }
   .story__caption {
@@ -641,7 +652,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .heading-secondary-main-build-something {
         letter-spacing: 1rem;
-        font-size: 1rem; } }
+        font-size: 2rem; } }
 
 .row-nav {
   margin-top: -8rem; }
