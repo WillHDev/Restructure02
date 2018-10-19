@@ -43,6 +43,10 @@ body {
   line-height: 1.7;
   color: #777; }
 
+.improv {
+  text-decoration: none;
+  color: #00ffff96; }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase; }
@@ -67,6 +71,18 @@ body {
       .heading-primary--sub {
         letter-spacing: 1rem;
         font-size: 1.5rem; } }
+
+.heading-secondary-projects {
+  color: #5643fa;
+  padding: 0;
+  font-weight: 900;
+  background-color: white;
+  text-align: center;
+  font-size: 4.5rem;
+  margin: 0; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary-projects {
+      font-size: 3rem; } }
 
 .heading-secondary {
   padding: 3rem;
@@ -129,7 +145,7 @@ body {
       padding: 10rem 0; } }
 
 .section-projects {
-  background-color: #f7f7f7;
+  background-color: white;
   padding: 0 0 10rem 0; }
 
 .header {
@@ -315,6 +331,7 @@ body {
       color: white;
       margin-top: 10rem; }
     .card__side--back {
+      text-align: center;
       padding: 1rem;
       color: white;
       margin-top: 10rem;
@@ -356,7 +373,7 @@ body {
     .card__heading--2 {
       margin-top: 20rem; }
   .card__heading-span {
-    border-radius: 25px;
+    border-radius: 10px;
     background-position: left top;
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
@@ -636,8 +653,8 @@ body {
 .row-build-something {
   padding: 1rem;
   background-color: white;
-  width: 100%;
-  border-top: 5px solid black;
+  width: 90%;
+  border-top: 1px solid #00000082;
   height: 5rem; }
 
 .heading-secondary-main {
@@ -647,11 +664,12 @@ body {
   font-size: 4rem;
   color: #2998ff; }
   .heading-secondary-main-build-something {
+    margin-right: 10px;
     float: right;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 37.5em) {
       .heading-secondary-main-build-something {
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
         font-size: 2rem; } }
 
 .row-nav {

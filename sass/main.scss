@@ -46,8 +46,8 @@
 //text-align: center;
 padding: 1rem;
 background-color: white;
-width: 100%;
-border-top: 5px solid black;
+width: 90%;
+border-top: 1px solid #00000082;
 height: 5rem;
 }
 
@@ -63,6 +63,7 @@ background-color: white;
   
 
     &-build-something {
+        margin-right: 10px;
        float: right;
        box-shadow: 0 1rem 2rem rgba($color-black,.2);
        //margin-right: 4rem;
@@ -70,7 +71,7 @@ background-color: white;
 
 
        @include respond(phone) {
-        letter-spacing: 1rem;
+        letter-spacing: .5rem;
         font-size: 2rem;
         }
     }
