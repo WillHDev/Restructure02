@@ -267,88 +267,115 @@
 
 
 
-
-@include respond(tab-port) { // width < 1200?
-
+  //@include respond(tab-port) { // width < 1200?
+    @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
   //FUNCTIONALITY
   //width: 100%;
 //display: block;
+  
+
   height: auto;
+  border-radius: 3px;
+  background-color: $color-white;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
+  &__side {
+    height: auto;
+    position: relative;
+    box-shadow: none;
+
+    &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+
+&:hover &__side--front {
+    transform: rotateY(0);
+}
+
+
+&__details {
+    padding: 1rem 3rem;
+}
+
   //margin:0;
  // padding:0;
 //box-sizing: inherit;
 
-&__details {
-    //padding: 3rem;
-&-container {
-    height:25rem;
-    padding: 0rem;
-}
-}
-  &__side {
-      // background-color: orange;
-      // font-size: 2rem;
-      //  color: white;
-      border-radius: 3px;
+// &__details {
+//     //padding: 3rem;
+// &-container {
+//     height:25rem;
+//     padding: 0rem;
+// }
+// }
+//   &__side {
+//       // background-color: orange;
+//       // font-size: 2rem;
+//       //  color: white;
+//       border-radius: 3px;
   
-      //background-position: left top;
-    //   overflow:hidden;
-    //   -webkit-backface-visibility: hidden;
-      height: auto;
+//       //background-position: left top;
+//     //   overflow:hidden;
+//     //   -webkit-backface-visibility: hidden;
+//       height: auto;
  
-      position: relative;
-    //   top:0;
-    //   left:0;
-    //   width: 100%;
-    //   //hides back part of element, no reverse text
-    //   backface-visibility: hidden;
+//       position: relative;
+//     //   top:0;
+//     //   left:0;
+//     //   width: 100%;
+//     //   //hides back part of element, no reverse text
+//     //   backface-visibility: hidden;
       
-     // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+//      // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
 
-    //   &--front {
-    //       background-color: $color-white;
-    //       color: white;
-    //       margin-top: 10rem;
-    //   }
-      &--back {
+//     //   &--front {
+//     //       background-color: $color-white;
+//     //       color: white;
+//     //       margin-top: 10rem;
+//     //   }
+//       &--back {
         
-          padding: 1rem;
-          color:white;
-          margin-top: 0rem;
-          font-size: 2rem;
-          background-image: linear-gradient(to right bottom, 
-              $color-tertiary-dark, $color-tertiary-light);
-          transform: rotateY(0);//from 180
+//           padding: 1rem;
+//           color:white;
+//           margin-top: 0rem;
+//           font-size: 2rem;
+//           background-image: linear-gradient(to right bottom, 
+//               $color-tertiary-dark, $color-tertiary-light);
+//           transform: rotateY(0);//from 180
 
-          &-2 {
-              background-image: url('./images/leather.jpg')
-          }
-          // &- {
-          //     background-image: url('/images/leather.jpg')
-          // }
-          // &-1 {
-          //     background-image: url('/images/leather.jpg')
-          // }
+//           &-2 {
+//               background-image: url('./images/leather.jpg')
+//           }
+//           // &- {
+//           //     background-image: url('/images/leather.jpg')
+//           // }
+//           // &-1 {
+//           //     background-image: url('/images/leather.jpg')
+//           // }
 
-          &--box {
-              padding-top: 10rem;
+//           &--box {
+//               padding-top: 10rem;
 
 
-          }
-      }
-  }
+//           }
+//       }
+//   }
 
-  &:hover &__side--front {
+//   &:hover &__side--front {
     
-      transform: rotateY(0);
+//       transform: rotateY(0);
 
-}
+// }
 
-&:hover &__side--back {
-  transform: rotateY(0);
+// &:hover &__side--back {
+//   transform: rotateY(0);
 
-}
+// }
 //FRONT SIDE STYLING
 // &__picture {
 //   background-size: cover;
