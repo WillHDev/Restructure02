@@ -171,18 +171,15 @@ body {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .row-projects {
-  height: 190rem; }
+  height: 155rem; }
 
 .row-profile-stories {
   z-index: -1; }
 
-.red {
-  background-color: orangered;
-  height: 50rem; }
-
-.white {
-  background-color: white;
-  height: 50rem; }
+.group:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 .row {
   max-width: 114rem;
@@ -319,7 +316,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem; }
+  height: 52rem;
+  margin-bottom: 22rem; }
   .card__side {
     background-position: left top;
     overflow: hidden;
@@ -342,10 +340,13 @@ body {
       color: white;
       margin-top: 10rem;
       font-size: 2rem;
-      background-image: linear-gradient(to right bottom, #5643fa, #2998ff);
       transform: rotateY(180deg); }
+      .card__side--back-1, .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #5643fa, #2998ff); }
       .card__side--back-2 {
-        background-image: url("./images/leather.jpg"); }
+        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
+      .card__side--back-4 {
+        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
       .card__side--back--box {
         padding-top: 10rem; }
   .card:hover .card__side--front {
@@ -355,11 +356,14 @@ body {
   .card__picture {
     background-size: cover;
     height: 40rem;
+    max-height: 400px;
     background-blend-mode: normal;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    max-height: 500px;
+    max-width: 600px; }
     .card__picture--1 {
       background-image: url("./images/Goodtimes.png"), linear-gradient(to right bottom, #5643fa, #2998ff); }
     .card__picture--2 {
@@ -367,7 +371,7 @@ body {
     .card__picture--3 {
       background-image: url("./images/PT5.jpg"), linear-gradient(to right bottom, #2998ff, #5643fa); }
     .card__picture--4 {
-      background-image: url("./images/coffee2.jpg"), linear-gradient(to right bottom, #2998ff, #5643fa); }
+      background-image: url("./images/coffee3.jpg"), linear-gradient(to right bottom, #ff7730, #ffb900); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -386,16 +390,19 @@ body {
     padding: 1rem 1.5rem;
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    opacity: 1;
     filter: alpha(opacity=100); }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+      position: relative;
+      bottom: 20rem; }
     .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+      position: relative;
+      bottom: 20rem; }
     .card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
+      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
   .card__details-container {
     padding: 2rem; }
   .card__details ul {

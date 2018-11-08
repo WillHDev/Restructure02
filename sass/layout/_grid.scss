@@ -3,22 +3,28 @@
 }
 
 .row-projects {
-  height: 190rem;
+  height: 155rem;
 }
 
 .row-profile-stories {
   z-index: -1;
 }
 
-.red {
-  background-color: orangered;
-  height: 50rem;
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.white {
-  background-color: white;
-  height: 50rem;
-}
+// .red {
+//   background-color: orangered;
+//   height: 50rem;
+// }
+
+// .white {
+//   background-color: white;
+//   height: 50rem;
+// }
 
 .row {
   max-width: $grid-width;
