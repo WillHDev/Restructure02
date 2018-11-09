@@ -316,62 +316,74 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 52rem;
+  height: auto;
+  background-color: #fff;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   margin-bottom: 22rem; }
   .card__side {
     background-position: left top;
     overflow: hidden;
     -webkit-backface-visibility: hidden;
-    height: 67rem;
+    height: auto;
+    position: relative;
+    box-shadow: none;
     transition: all 0.8s ease;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    backface-visibility: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    backface-visibility: hidden; }
     .card__side--front {
-      background-color: #fff;
-      color: white;
-      margin-top: 10rem; }
+      background-color: #22b3fc;
+      margin-top: 10rem;
+      height: 45rem; }
+      .card__side--front--4 {
+        background-color: chocolate; }
+      .card__side--front--5 {
+        height: 70rem; }
     .card__side--back {
       text-align: center;
       padding: 1rem;
-      color: white;
-      margin-top: 10rem;
+      background-color: #f95a56;
+      color: ivory;
       font-size: 2rem;
-      transform: rotateY(180deg); }
-      .card__side--back-1, .card__side--back-3 {
-        background-image: linear-gradient(to right bottom, #5643fa, #2998ff); }
+      margin-top: -8rem;
+      transform: rotateY(0);
+      clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      .card__side--back-1 {
+        height: 40rem;
+        margin-top: -8rem; }
       .card__side--back-2 {
-        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
+        background-color: #ffb901; }
       .card__side--back-4 {
-        background-image: linear-gradient(to right bottom, #ff7730, #ffb900); }
+        background-color: #e5a90a; }
       .card__side--back--box {
         padding-top: 10rem; }
   .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
+    transform: rotateY(0); }
   .card:hover .card__side--back {
     transform: rotateY(0); }
   .card__picture {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-size: cover;
     height: 40rem;
     max-height: 400px;
     background-blend-mode: normal;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     max-height: 500px;
-    max-width: 600px; }
+    max-width: 1000px; }
     .card__picture--1 {
-      background-image: url("./images/Goodtimes.png"), linear-gradient(to right bottom, #5643fa, #2998ff); }
+      background-image: url("./images/goodtimesDark.png"), linear-gradient(to right bottom, #5643fa, #2998ff); }
     .card__picture--2 {
-      background-image: url("./images/Dothraki.jpg"), linear-gradient(to right bottom, #ff7730, #ffb900); }
+      background-image: url("./images/dothrakiField.jpg"), linear-gradient(to right bottom, #ff7730, #ffb900); }
     .card__picture--3 {
       background-image: url("./images/PT5.jpg"), linear-gradient(to right bottom, #2998ff, #5643fa); }
     .card__picture--4 {
       background-image: url("./images/coffee3.jpg"), linear-gradient(to right bottom, #ff7730, #ffb900); }
+    .card__picture--5 {
+      height: 120rem;
+      background-image: url("./images/Espresso.png"), linear-gradient(to right bottom, #ff7730, #ffb900); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -383,8 +395,12 @@ body {
     right: 2rem;
     width: 75%; }
     .card__heading--2 {
-      margin-top: 20rem; }
+      margin-top: 20rem;
+      color: gold; }
   .card__heading-span {
+    font-size: 60px;
+    color: ivory;
+    text-shadow: 4px 4px grey;
     border-radius: 10px;
     background-position: left top;
     padding: 1rem 1.5rem;
@@ -392,36 +408,39 @@ body {
     box-decoration-break: clone;
     filter: alpha(opacity=100); }
     .card__heading-span--1 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa); }
+      font-size: 75px;
+      font-weight: 600; }
     .card__heading-span--2 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
-      position: relative;
-      bottom: 20rem; }
-    .card__heading-span--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+      color: gold;
+      font-size: 80px;
+      font-weight: 400;
       position: relative;
       bottom: 20rem; }
     .card__heading-span--4 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
-  .card__details-container {
-    padding: 2rem; }
-  .card__details ul {
-    margin: auto;
-    position: absolute;
-    bottom: 0;
-    margin-left: 3rem;
-    padding: 0;
-    text-align: center;
-    list-style: none;
-    width: 80%;
-    margin-bottom: 5rem; }
-    .card__details ul li {
+      font-size: 80px;
+      font-weight: 400; }
+  .card__details {
+    padding: 1rem 3rem;
+    margin-top: 20rem; }
+    .card__details-container {
+      padding: 2rem; }
+    .card__details ul {
+      margin: auto;
+      position: absolute;
+      bottom: 0;
+      margin-left: 3rem;
+      padding: 0;
       text-align: center;
-      font-size: 1.5rem;
-      padding: 1rem;
-      color: #2e226d; }
-      .card__details ul li:not(:last-child) {
-        border-bottom: 1px solid #eee; }
+      list-style: none;
+      width: 80%;
+      margin-bottom: 5rem; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+        color: #2e226d; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -665,6 +684,9 @@ body {
   height: 100%;
   width: auto; }
 
+.tech-image {
+  height: 100px; }
+
 .row-build-something {
   padding: 1rem;
   background-color: white;
@@ -684,7 +706,7 @@ body {
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 37.5em) {
       .heading-secondary-main-build-something {
-        letter-spacing: .5rem;
+        letter-spacing: 0.5rem;
         font-size: 2rem; } }
 
 .row-nav {
