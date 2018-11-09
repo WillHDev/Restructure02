@@ -547,9 +547,15 @@ body {
   margin-left: 40px;
   margin-bottom: 3rem; }
 
+@media only screen and (max-width: 37.5em) {
+  .links-row {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap; } }
+
 .main-nav li a:link,
 .main-nav li a:visited {
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   color: #2998ff;
   text-decoration: none;
   text-transform: uppercase;
@@ -557,6 +563,14 @@ body {
   border-bottom: 3px solid transparent;
   -webkit-transition: border-bottom 0.2s;
   transition: border-bottom 0.2s; }
+  @media only screen and (max-width: 37.5em) {
+    .main-nav li a:link,
+    .main-nav li a:visited {
+      font-size: 3rem;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 1rem;
+      margin: 1rem; } }
 
 .main-nav li a:hover,
 .main-nav li a:active {
@@ -564,8 +578,11 @@ body {
 
 .about-info {
   box-sizing: border-box;
-  width: 40rem;
-  height: 40rem; }
+  margin-left: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .about-info {
+      font-size: 2rem;
+      text-overflow: none; } }
 
 .story {
   z-index: 1;

@@ -1,5 +1,8 @@
 .about-info {
-   box-sizing: border-box;
-    width: 40rem;
-    height: 40rem;
+  box-sizing: border-box;
+  margin-left: 2rem;
+  @include respond(phone) {
+    font-size: 2rem;
+    text-overflow: none;
+  }
 }
