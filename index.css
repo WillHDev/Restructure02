@@ -78,7 +78,7 @@ body {
   font-weight: 900;
   background-color: white;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 6rem;
   margin: 0; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary-projects {
@@ -312,6 +312,9 @@ body {
         width: 100%;
         float: none; } }
 
+.tech-grid-element {
+  margin-top: -50px; }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
@@ -346,9 +349,17 @@ body {
       background-color: #f95a56;
       color: ivory;
       font-size: 2rem;
+      text-align: left;
       margin-top: -8rem;
       transform: rotateY(0);
       clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); }
+      @media only screen and (max-width: 56.25em) {
+        .card__side--back {
+          margin-top: 0;
+          padding: 0;
+          padding-top: 10rem;
+          height: 400px;
+          display: flex; } }
       .card__side--back-1 {
         height: 40rem;
         margin-top: -8rem; }
@@ -357,7 +368,14 @@ body {
       .card__side--back-4 {
         background-color: #e5a90a; }
       .card__side--back--box {
-        padding-top: 10rem; }
+        padding-top: 10rem;
+        margin-top: 60px;
+        padding: 40px; }
+        @media only screen and (max-width: 56.25em) {
+          .card__side--back--box {
+            margin-top: 0;
+            padding: 0;
+            padding-left: 10px; } }
   .card:hover .card__side--front {
     transform: rotateY(0); }
   .card:hover .card__side--back {
@@ -375,6 +393,9 @@ body {
     max-width: 1000px; }
     .card__picture--1 {
       background-image: url("./images/goodtimesDark.png"), linear-gradient(to right bottom, #5643fa, #2998ff); }
+      @media only screen and (max-width: 56.25em) {
+        .card__picture--1 {
+          background-image: url("./images/goodtimesSmall2.png"), linear-gradient(to right bottom, #5643fa, #2998ff); } }
     .card__picture--2 {
       background-image: url("./images/dothrakiField.jpg"), linear-gradient(to right bottom, #ff7730, #ffb900); }
     .card__picture--3 {
@@ -409,16 +430,51 @@ body {
     filter: alpha(opacity=100); }
     .card__heading-span--1 {
       font-size: 75px;
-      font-weight: 600; }
+      font-weight: 600;
+      margin-left: 300px;
+      /* box-sizing: border-box; */
+      display: inline-flex;
+      float: left;
+      text-align: center;
+      margin: 0 auto;
+      margin-right: -60px; }
+      @media only screen and (max-width: 75em) {
+        .card__heading-span--1 {
+          margin-left: -30px;
+          margin-right: 0;
+          margin-top: 200px; } }
+      @media only screen and (max-width: 56.25em) {
+        .card__heading-span--1 {
+          margin-left: -30px;
+          margin-right: 0;
+          margin-top: 200px;
+          font-size: 40px;
+          float: left;
+          margin-left: -60px;
+          margin-right: 20px; } }
     .card__heading-span--2 {
       color: gold;
       font-size: 80px;
       font-weight: 400;
       position: relative;
       bottom: 20rem; }
+      @media only screen and (max-width: 56.25em) {
+        .card__heading-span--2 {
+          font-size: 40px;
+          margin: 0 auto;
+          margin-left: -20px; } }
     .card__heading-span--4 {
       font-size: 80px;
       font-weight: 400; }
+      @media only screen and (max-width: 56.25em) {
+        .card__heading-span--4 {
+          font-size: 50px;
+          font-weight: 400;
+          margin: 0 auto;
+          margin-right: 20px;
+          float: right;
+          margin-right: 20px;
+          margin-left: -40px; } }
   .card__details {
     padding: 1rem 3rem;
     margin-top: 20rem; }
@@ -476,8 +532,8 @@ body {
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 10rem;
-    transition: all .2s;
+    border-radius: 3rem;
+    transition: all 0.2s;
     position: relative;
     font-size: 1.6rem;
     border: none;
@@ -512,9 +568,9 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transition: all .4s; }
+    transition: all 0.4s; }
   .btn--animated {
-    animation: moveInBottom .5s ease-out .75s;
+    animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards; }
 
 .btn-text:link, .btn-text:visited {
@@ -524,7 +580,7 @@ body {
   text-decoration: none;
   border-bottom: 1px solid #5643fa;
   padding: 3px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .btn-text:hover {
   background-color: #2998ff;
