@@ -1,132 +1,152 @@
+.story-space {
+  margin-bottom: 30px;
+}
+
 .story {
-    
-    z-index: 1;
-    width: 65%;
-  
-    color: white;
-    margin: 0 auto;
-    box-shadow: 0 3rem 6rem rgba($color-black, .1);
-    background-image: linear-gradient(to right bottom, 
-            $color-tertiary-dark, $color-tertiary-light);
-    border-radius: 3px;
-    padding: 1rem;
-    padding-left: 6rem;
-    font-size: $default-font-size;
-    transform: skewX(-12deg);
+  z-index: 1;
+  width: 100%;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+  background-image: linear-gradient(
+    to right bottom,
+    $color-tertiary-dark,
+    $color-tertiary-light
+  );
+  border-radius: 3px;
+  padding: 1rem;
+  padding-left: 6rem;
+  font-size: $default-font-size;
+  transform: skewX(-12deg);
+  margin-bottom: 30px;
 
+  @include respond(tab-port) {
+    margin-bottom: 30px;
+  }
 
-    &--right {
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-        margin-top: 5rem;
-        //overflow: visible;
-        //margin-left: 25rem;
-            float: left;
-      
-            @include respond(tab-port) {
-                margin-bottom: -1rem;
-                margin-left: -1rem;
-            }  
-    }
+  &--right {
+    text-align: center;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    margin-top: 5rem;
+    //overflow: visible;
+    //margin-left: 25rem;
 
-    &--left {
-        margin-top: -5rem;
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
- 
-        margin-left: 10rem;
-            float:right;
-            //position: absolute;
-            @include respond(tab-port) {
-                margin-top: 20rem;
-                margin-right: -1rem;
-                margin-top: 1rem;
-            }  
-    }
-
-    // @include respond(tab-port) {
-    //     width: 65%;
-    //     padding: 4rem;
-    //     padding-left: 7rem;
-    //     display: inline-block
-    // }
+    float: left;
+    margin-bottom: 30px;
 
     @include respond(tab-port) {
-        transform: skewX(0);
-        box-sizing: inline-block;
-        margin-top: 5rem;
-        width: 85%;
-        float:none;
+      margin-bottom: -1rem;
+      margin-left: -1rem;
+      padding: 3px;
+      margin-left: 3px;
+      padding-left: 30px;
+    }
+  }
 
+  &--left {
+    width: 70%;
+    margin-bottom: 30px;
+    margin-top: -5rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    margin: 0 auto;
+    margin-left: 10rem;
+    float: right;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 70px;
+    //position: absolute;
+    @include respond(tab-port) {
+      margin-top: 20rem;
+      margin-right: -1rem;
+      margin-top: 1rem;
+      margin-bottom: 30px;
+      float: right;
+    }
+  }
+
+  // @include respond(tab-port) {
+  //     width: 65%;
+  //     padding: 4rem;
+  //     padding-left: 7rem;
+  //     display: inline-block
+  // }
+
+  @include respond(tab-port) {
+    transform: skewX(0);
+    box-sizing: inline-block;
+    margin-top: 5rem;
+    width: 100%;
+
+    margin-bottom: 20px;
+  }
+
+  &__shape {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    transform: translateX(-3rem) skewX(12deg);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+      border-radius: none;
     }
 
-    &__shape {
-        width: 15rem;
-        height: 15rem;
-        float: left;
-        transform: translateX(-3rem) skewX(12deg);
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-    
+    @include respond(phone) {
+      transform: translateX(-3rem) skewX(0);
+    }
+  }
 
-        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-            -webkit-clip-path: circle(50% at 50% 50%);
-            clip-path: circle(50% at 50% 50%);
-            -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%);
-            border-radius: none;
-        }
+  &__img {
+    height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
+    transition: all 0.5s;
+  }
 
-        @include respond(phone) {
-            transform: translateX(-3rem) skewX(0);
-        }
+  &__text {
+    transform: skewX(12deg);
+
+    &-left {
+      // margin-left: 2rem;
     }
 
-    &__img {
-        height: 100%;
-        transform: translateX(-4rem) scale(1.4);
-        backface-visibility: hidden;
-        transition: all .5s;
+    &-right {
+      margin-right: 3rem;
     }
 
-
-    &__text {
-        transform: skewX(12deg);
-
-        &-left {
-            // margin-left: 2rem;
-        }
-
-
-        &-right {
-            margin-right: 3rem;
-        }
-
-        @include respond(tab-port) {
-            transform: skewX(0);
-        }
+    @include respond(tab-port) {
+      transform: skewX(0);
     }
+  }
 
-    &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 20%);
-        color: $color-white;
-        text-transform: uppercase;
-        font-size: 1.7rem;
-        text-align: center;
-        opacity: 0;
-        transition: all .5s;
-        backface-visibility: hidden;
-    }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+  }
 
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-    }
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 
-    &:hover &__img {
-        transform: translateX(-4rem) scale(1);
-        filter: blur(3px) brightness(80%);
-    }
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
 }

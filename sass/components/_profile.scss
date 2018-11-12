@@ -1,64 +1,61 @@
-
 .profile-picture-container {
-    box-shadow: 0 1rem 2rem rgba($color-black,.2);
-    width: 38rem;
-    height: 38rem;
-    position: absolute;
-    //float: right;
-    //margin-right: 5rem;
-   
-    margin-top: 20rem;
-    overflow: hidden;
-z-index: 2;
-   
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+  //float: right;
+  //margin-right: 5rem;
 
-        border: 12px solid  $color-tertiary-dark;
-        border-image-source: -webkit-linear-gradient(to right bottom, 
-        $color-tertiary-dark, $color-tertiary-light);
-        border-image-slice: 1;
-        border-radius: 50%;
-        // border-radius: 100%;
-        display: inline-block;
-        //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-        @include respond(phone) { // width < 1200?
-            float: none;
-            // margin: 0; //1 rem = 9px, 9/16 = 50%
-             margin-top: 15rem;
-        }
-        @include respond(tab-port) { // width < 1200?
-            float:none;
-            display: inline-block;
-            position: relative;
-            // margin: 0; //1 rem = 9px, 9/16 = 50%
-             margin-top: 15rem;
-        }
+  margin-top: 20rem;
+  overflow: hidden;
+  z-index: 2;
 
-
+  border: 12px solid $color-tertiary-dark;
+  border-image-source: -webkit-linear-gradient(
+    to right bottom,
+    $color-tertiary-dark,
+    $color-tertiary-light
+  );
+  border-image-slice: 1;
+  border-radius: 50%;
+  // border-radius: 100%;
+  display: inline-block;
+  //box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+  @include respond(phone) {
+    // width < 1200?
+    float: none;
+    // margin: 0; //1 rem = 9px, 9/16 = 50%
+    margin-top: -90px;
+  }
+  @include respond(tab-port) {
+    // width < 1200?
+    float: none;
+    display: inline-block;
+    position: relative;
+    // margin: 0; //1 rem = 9px, 9/16 = 50%
+    margin-top: -10px;
+  }
 }
 
 .profile-picture {
- 
-// float:right;
-// margin-right: 10rem;
-//     width: 300px;
-//  height: 600px;
-//  border-radius: 50%;
+  // float:right;
+  // margin-right: 10rem;
+  //     width: 300px;
+  //  height: 600px;
+  //  border-radius: 50%;
 
-//     background-color: #cccccc;
+  //     background-color: #cccccc;
 
-//     background-position: center;
-//     background-repeat: no-repeat;
-   
-//     position: relative;
+  //     background-position: center;
+  //     background-repeat: no-repeat;
 
-display: inline;
-margin: 0 auto;
-margin-left: -10%; //centers the image
-height: 100%;
-width: auto;
-       // background-image: url('./images/Profile8.jpg');
-      
-  
-       
-    
+  //     position: relative;
+
+  display: inline;
+  margin: 0 auto;
+  margin-left: -10%; //centers the image
+  height: 100%;
+  width: auto;
+
+  // background-image: url('./images/Profile8.jpg');
 }

@@ -1,8 +1,21 @@
 .about-info {
   box-sizing: border-box;
-  margin-left: 2rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+
   @include respond(phone) {
     font-size: 2rem;
     text-overflow: none;
+    text-align: left;
+  }
+}
+.about-info-right {
+  margin-left: 40px;
+  @include respond(tab-land) {
+    width: 100%;
+    text-align: left;
+  }
+  @include respond(phone) {
+    margin-left: 0;
   }
 }
