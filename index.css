@@ -75,14 +75,19 @@ body {
 .heading-secondary-projects {
   color: #5643fa;
   padding: 0;
-  font-weight: 900;
+  font-weight: 100;
+  text-shadow: 4px 4px grey;
   background-color: white;
   text-align: center;
-  font-size: 6rem;
-  margin: 0; }
-  @media only screen and (max-width: 37.5em) {
+  font-size: 80px;
+  margin-bottom: 80px; }
+  @media only screen and (max-width: 56.25em) {
     .heading-secondary-projects {
-      font-size: 3rem; } }
+      margin-top: -120px;
+      margin-bottom: 10px;
+      font-size: 40px;
+      font-weight: 900;
+      text-shadow: none; } }
 
 .heading-secondary {
   padding: 3rem;
@@ -317,6 +322,45 @@ body {
 
 .tech-grid-element {
   margin-top: -50px; }
+
+.card-heading-1 {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey; }
+  @media only screen and (max-width: 37.5em) {
+    .card-heading-1 {
+      font-size: 40px; } }
+
+.card-heading-2 {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey; }
+  @media only screen and (max-width: 37.5em) {
+    .card-heading-2 {
+      font-size: 40px; } }
+
+.card-heading-3 {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey; }
+  @media only screen and (max-width: 37.5em) {
+    .card-heading-3 {
+      font-size: 40px; } }
 
 .card {
   perspective: 150rem;

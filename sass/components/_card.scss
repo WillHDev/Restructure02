@@ -2,6 +2,46 @@
   margin-top: -50px;
 }
 
+.card-heading-1 {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey;
+  @include respond(phone) {
+    font-size: 40px;
+  }
+}
+.card-heading-2 {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey;
+  @include respond(phone) {
+    font-size: 40px;
+  }
+}
+.card-heading-3 {
+  display: block;
+  text-align: center;
+  font-size: 80px;
+  margin: 0;
+  margin-bottom: -80px;
+  margin-top: -60px;
+  color: #ffb901;
+  text-shadow: 4px 4px grey;
+
+  @include respond(phone) {
+    font-size: 40px;
+  }
+}
 .card {
   //FUNCTIONALITY
 
@@ -218,6 +258,11 @@
   }
 
   &__heading-span {
+    // font-size: 60px;
+    // color: rgba(0, 0, 0, 0.15);
+    // text-shadow: 4px 4px grey;
+    // border-radius: 10px;
+
     //position: absolute;
     font-size: 60px;
     color: ivory;

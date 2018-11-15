@@ -1,0 +1,328 @@
+// <!DOCTYPE html></link>
+// <html lang="en">
+
+// <head>
+//     <meta charset="UTF-8">
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+//     <link rel="stylesheet" href="index.css">
+//     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+//     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700i,800" rel="stylesheet">
+//     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+//     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+//     <title>Will Holcombe</title>
+// </head>
+
+// <body>
+//     <header class="header">
+
+//         <div class="header__text-box">
+
+//             <h1 class="heading-primary">
+
+//                 <div class="heading-primary--main">Will Holcombe</div>
+//                 <div class="heading-primary--sub">Full Stack Developer</div>
+//             </h1>
+
+//         </div>
+
+//     </header>
+
+//     <main class="container">
+//         <div class=" row-build-something">
+//             <div class="col-1-of-2 ">
+//                 <section class="section-about">
+//                     <h2 class="heading-secondary-main heading-secondary-main-build-something">"Let's Build Something
+//                         Great"</h2>
+//                 </section>
+//             </div>
+
+//         </div>
+
+//         <div class="row row-profile">
+
+//             <div class="col-1-of-3 ">
+//                 <div class="profile-picture-container">
+//                     <img src="./images/Profile10.jpg" alt="" class="profile-picture">
+//                 </div>
+//             </div>
+//         </div>
+
+//         <div class="row row-nav">
+//             <div class="col-1-of-1 col-shadow links-row">
+//                 <ul class="main-nav js--main-nav">
+//                     <li> <a href="https://www.linkedin.com/in/william-holcombe-699196161/">LinkedIn</a> </li>
+//                     <li> <a href="https://github.com/WillHDev">Github</a> </li>
+//                     <li> <a href="Will.V.Holcombe_Resume.pdf">Resume</a> </li>
+//                     <li> <a href="mailto:william.holcombe@uconn.edu">Email</a> </li>
+//                 </ul>
+
+//             </div>
+//         </div>
+//         <div class="row row-profile-and-stories">
+//             <div class="col-1-of-1 ">
+
+//                 <div class="row-type-two row-about">
+//                     <div class="story story--left story-space">
+
+//                         <div class="story__text story__text-left">
+
+//                             <p class="paragraph about-info about-info-right">
+//                                 Hi, I'm Will.  I love the craft and problem solving that go into developing an app.  When I'm not firing away at the keys, you can find me practicing <a class="improv"
+//                                     href="https://seateaimprov.com/"> improv comedy</a>, tutoring math, or hiking the
+//                                 White Mountains.
+//                             </p>
+
+//                         </div>
+
+//                     </div>
+//                     <div class="story story--right">
+
+//                         <div class="story__text story__text-right">
+
+//                             <p class="paragraph paragraph-right-story about-info">
+//                                 I specialize in React and I frequently use React/Redux, Node.js/Express, MongoDB, PostgreSQL, and MeteorJS to
+//                                 build web applications.  I enjoy the challenge of
+//                                 learning different technologies, and I'm always looking for new things to add to the
+//                                 stack.
+//                             </p>
+
+//                         </div>
+//                     </div>
+//                 </div>
+
+//             </div>
+
+//         </div>
+
+//         <section class="section-projects">
+//             <div class="row row-profile-and-stories">
+//                 <div class="u-center-text u-margin-botton-big heading-container">
+
+//                     <h2 class="heading-secondary-projects">
+//                         Recent Projects
+//                     </h2>
+//                 </div>
+
+//             </div>
+//             <div class="row">
+//              <section>
+//                             <h4 class="card-heading-1">
+//                                     <span class="card-span">
+//                                         GoodTimes Event Planner</span>
+//                                 </h4>
+//                             </section>
+//                 <div class="row row-projects">
+
+//                     <div class="group">
+//                         <div class="col-1-of-1 project-col">
+//                             <div class="card">
+//                                 <div class="card__side card__side--front card__side--front--1">
+//                                     <div class="card__picture card__picture--1">
+//                                         &nbsp;
+
+//                                     </div>
+
+//                                 </div>
+
+//                                 <div class="card__side card__side--back card__side--back-1">
+//                                     <div class="card__side--back--box">
+//                                         A full stack app for planning events with friends and family. Users build a
+//                                         custom
+//                                         invitation with schedule and location options.
+//                                         Recipients receive the form and vote.  Built with React, Redux, Node, HTML5, CSS3, Express
+//                                         and
+//                                         Mongo.
+//                                     </div>
+
+//                                     <div class="project-link--1">
+
+//                                         <a class='btn btn--blue btn--animated' href="https://goodtimes-client.herokuapp.com/">Visit
+//                                             App</a>
+//                                         <a href="https://github.com/thinkful-ei22/its_a_date_client" class='btn btn--blue btn--animated'>Repo</a>
+//                                         <div class="card__side--back--box tech-grid-elemt">  <img class="tech-image" src="images/reactclear.png"/> </div>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                             <!-- </div> -->
+//                         </div>
+//                         <!-- <div class="col-1-of-2 red">
+//                     </div>
+//                     <div class="col-1-of-1 white">
+//                     </div>
+//                     <div class="col-1-of-2 red">
+//                     </div>
+//                     <div class="col-1-of-1 white">
+//                     </div>
+//                     <div class="col-1-of-3 red">
+//                     </div>
+//                     <div class="col-1-of-3 red">
+//                     </div>
+//                     <div class="col-1-of-3 red">
+//                     </div> -->
+
+//                     </div>
+//                     <section>
+//                             <h4 class="card-heading-2">
+//                                     <span class="card-span">
+//                                         GoodTimes Event Planner</span>
+//                                 </h4>
+//                             </section>
+//                     <div class="group">
+//                         <div class="col-1-of-1 project-col">
+//                             <div class="card">
+//                                 <div class="card__side card__side--front card__side--front--4">
+//                                     <div class="card__picture card__picture--4">
+//                                         &nbsp;
+//                                     </div>
+//                                     <h4 class="card__heading card__heading--4">
+//                                         <span class="card__heading-span card__heading-span--4">
+//                                             Espresso Reads
+//                                         </span>
+//                                     </h4>
+
+//                                 </div>
+
+//                                 <div class="card__side card__side--back card__side--back-4">
+//                                     <div class="card__side--back--box">
+//                                             Espresso Reads is an app designed to help you quickly navigate to the high points in the nonfiction landscape.   Think Yelp for book passages.
+//                                             Built with React/Redux featuring Express on the backend.  Also uses Google Books API.
+
+//                                     </div>
+//                                     <div class="project-link--1">
+
+//                                         <a class='btn btn--blue btn--animated' href="https://silly-noether-09bfca.netlify.com/">Visit
+//                                             App</a>
+//                                         <a href="https://github.com/WillHDev/EspressoReads" class='btn btn--blue btn--animated'>Repo</a>
+//                                         <div class="card__side--back--box tech-grid-elemt">  <img class="tech-image" src="images/reactclear.png"/> </div>
+//                                     </div>
+
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <section>
+//                                 <h4 class="card-heading-3">
+//                                         <span class="card-span">
+//                                             GoodTimes Event Planner</span>
+//                                     </h4>
+//                                 </section>
+//                         <div class="col-1-of-1 ">
+//                             <div class="card">
+//                                 <div class="card__side card__side--front card__side--front--2">
+//                                     <div class="card__picture card__picture--2">
+//                                         &nbsp;
+//                                     </div>
+
+//                                 </div>
+
+//                                 <div class="card__side card__side--back card__side--back-2">
+//                                     <div class="card__side--back--box">
+//                                         A full stack language learning app featuring a spaced repetition algorithm
+//                                         for optimized memorization. Built with React, Redux, Node, HTML5,
+//                                         CSS3, Express and Mongo.
+
+//                                     </div>
+//                                     <div class="project-link--1">
+
+//                                         <a class='btn btn--blue btn--animated' href="https://learndothraki.herokuapp.com">Visit
+//                                             App</a>
+//                                         <a href="https://github.com/thinkful-ei22/spaced-repetition-client-brandon-william-rachel"
+//                                             class='btn btn--blue btn--animated'>Repo</a>
+//                                             <div class="card__side--back--box tech-grid-elemt">  <img class="tech-image" src="images/reactclear.png"/> </div>
+//                                     </div>
+
+//                                 </div>
+//                             </div>
+//                         </div>
+
+//                     </div>
+
+//                 </div>
+//         </section>
+
+//         </div>
+//     </main>
+//     <footer class="footer">
+
+//         <div class="row">
+//             <div class="col-1-of-2">
+//                 <div class="footer__navigation">
+//                     <ul class="footer__list">
+//                         <li class="footer__item"><a href="Will.V.Holcombe_Resume.pdf" class="footer__link">Resume</a></li>
+//                         <li class="footer__item"><a href="https://www.linkedin.com/in/william-holcombe-699196161/"
+//                                 class="footer__link">LinkedIn</a></li>
+//                         <li class="footer__item"><a href="https://github.com/WillHDev" class="footer__link">Github</a></li>
+
+//                     </ul>
+//                 </div>
+//             </div>
+//             <div class="col-1-of-2">
+//                 <p class="footer__copyright">
+//                     Built by <a href="#" class="footer__link">Will Holcombe</a> <a href="#" class="footer__link"></a>
+//                     Copyright &copy; by Will Holcombe
+//                 </p>
+//             </div>
+//         </div>
+//     </footer>
+
+// </body>
+
+// </html>
+
+// <!--
+//     <section class="grid-test">
+//         <div class="row">
+//             <div class="col-1-of-2">
+//                 Col 1 of 2
+//             </div>
+//             <div class="col-1-of-2">
+//                 Col 1 of 2
+//             </div>
+//         </div>
+
+//         <div class="row">
+//             <div class="col-1-of-3">
+//                 Col 1 of 3
+//             </div>
+//             <div class="col-1-of-3">
+//                 Col 1 of 3
+//             </div>
+//             <div class="col-1-of-3">
+//                 Col 1 of 3
+//             </div>
+//         </div>
+
+//         <div class="row">
+//             <div class="col-1-of-3">
+//                 Col 1 of 3
+//             </div>
+//             <div class="col-2-of-3">
+//                 Col 2 of 3
+//             </div>
+
+//             <div class="row">
+//                 <div class="col-1-of-4">
+//                     Col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     Col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     Col 1 of 4
+//                 </div>
+//                 <div class="col-1-of-4">
+//                     Col 1 of 4
+//                 </div>
+//             </div>
+//         </div>
+//         <div class="row">
+//             <div class="col-1-of-4">
+//                 Col 1 of 4
+//             </div>
+//             <div class="col-3-of-4">
+//                 Col 3 of 4
+//             </div>
+//         </div>
+
+//     </div>
+// -->
