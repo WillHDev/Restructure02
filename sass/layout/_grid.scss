@@ -28,13 +28,16 @@
 
 .row {
   max-width: $grid-width;
-  background-color: #eee;
+
+  // background-color: #eee;
+
   /* center block elements nice! */
   margin: 0 auto;
   // margin-top: 0rem;
   margin-bottom: $gutter-vertical;
   // &:not(:last-child) {
   // }
+
   @include respond(tab-port) {
     max-width: 50rem;
     padding: 0 3rem;

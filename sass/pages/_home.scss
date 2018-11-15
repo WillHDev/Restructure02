@@ -2,7 +2,7 @@
   background-color: white;
 
   padding: 0 0 10rem 0;
-  @include respond(tab-lsnd) {
+  @include respond(tab-land) {
     background-color: #eee;
   }
 }

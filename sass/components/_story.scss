@@ -3,6 +3,7 @@
 }
 
 .story {
+  font-family: Open Sans;
   z-index: 1;
   width: 100%;
   font-weight: 600;
@@ -150,3 +151,12 @@
     filter: blur(3px) brightness(80%);
   }
 }
+
+// -webkit-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.75);
+// -moz-box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.75);
+// /* box-shadow: 10px 10px 34px -12px rgba(0,0,0,0.75); */
+// ox-shadow: 10px 10px 34px -12px rgba(0,0,0,0.75);
+// border: 3px navy;
+// border: 4px solid #ffb901;
+// border-radius: 10px;
+// }

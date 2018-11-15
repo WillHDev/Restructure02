@@ -141,23 +141,25 @@
     max-height: 500px;
     max-width: 1000px;
     &--1 {
-      background-image: url("./images/goodtimesDark.png"),
+      // background-image: url("./images/goodtimesDark.png"),
+      background-image: url("./images/goodtimesReplace.png"),
         linear-gradient(
           to right bottom,
           $color-tertiary-dark,
           $color-tertiary-light
         );
-      @include respond(tab-port) {
-        background-image: url("./images/goodtimesSmall2.png"),
-          linear-gradient(
-            to right bottom,
-            $color-tertiary-dark,
-            $color-tertiary-light
-          );
-      }
+      // @include respond(tab-port) {
+      //   background-image: url("./images/goodtimesSmall2.png"),
+      //     linear-gradient(
+      //       to right bottom,
+      //       $color-tertiary-dark,
+      //       $color-tertiary-light
+      //     );
+      // }
     }
     &--2 {
-      background-image: url("./images/dothrakiField.jpg"),
+      //background-image: url("./images/dothrakiField.jpg"),
+      background-image: url("./images/dothrakiReplace.png"),
         linear-gradient(
           to right bottom,
           $color-secondary-dark,
@@ -176,9 +178,8 @@
     }
 
     &--4 {
-      //height: 35rem;
-
-      background-image: url("./images/coffee3.jpg"),
+      // background-image: url("./images/coffee3.jpg"),
+      background-image: url("./images/coffee3Replace.png"),
         linear-gradient(
           to right bottom,
           $color-secondary-dark,
