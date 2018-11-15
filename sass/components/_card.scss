@@ -1,5 +1,6 @@
 .tech-grid-element {
   margin-top: -50px;
+  margin: 0;
 }
 
 .card-heading-1 {
@@ -149,6 +150,7 @@
         margin-bottom: -20px;
         text-align: center;
         @include respond(tab-port) {
+          text-align: left;
           font-size: 15px;
           margin-top: 0;
           padding: 0;
@@ -308,10 +310,13 @@
       position: relative;
       bottom: 20rem;
       @include respond(tab-port) {
-        font-size: 40px;
+        font-size: 55px;
 
         margin: 0 auto;
         margin-left: -20px;
+      }
+      @include respond(phone) {
+        font-size: 40px;
       }
     }
 
