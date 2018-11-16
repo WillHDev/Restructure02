@@ -47,7 +47,7 @@ body {
   // background-image: linear-gradient(to right bottom,
   // $color-tertiary-light, $color-tertiary-dark);
   // color: transparent;
-  margin: 10px;
+  margin-top: 10px;
   color: #7ed56f;
   padding: 0;
   font-weight: 900;
@@ -61,13 +61,11 @@ body {
   margin-bottom: 80px;
   // margin: 0;
 
-  //margin-bottom: 3rem;
-
-  @include respond(tab-port) {
+  @include respond(phone) {
     //letter-spacing: 2rem;
     margin-top: -120px;
     margin-bottom: 10px;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 900;
     text-shadow: none;
   }

@@ -184,18 +184,10 @@
     max-width: 1000px;
     &--1 {
       // background-image: url("./images/goodtimesDark.png"),
-      background-image: url("./images/goodtimesReplace.png"),
-        linear-gradient(
-          to right bottom,
-          $color-tertiary-dark,
-          $color-tertiary-light
-        );
+      background-image: url("./images/goodTimesReplace.png");
       // @include respond(tab-port) {
       //   background-image: url("./images/goodtimesSmall2.png"),
-      //     linear-gradient(
-      //       to right bottom,
-      //       $color-tertiary-dark,
-      //       $color-tertiary-light
+      //
       //     );
       // }
     }
